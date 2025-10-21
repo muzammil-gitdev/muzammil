@@ -18,6 +18,7 @@
   margin: 0 auto;
   max-width: 140rem;
   padding: 1.6rem 3rem;
+  position: relative;
 }
 .nav-container {
   display: flex;
@@ -30,17 +31,20 @@
 .nav-links-container {
   display: flex;
   gap: 3.2rem;
-  transition: all 1s;
+  transition: all 0.2s ease-in-out;
 }
 .nav-links {
   font-weight: 200;
   list-style: none;
   font-size: 1.6rem;
+  transition: all 0.5s;
+  border-radius: 5px;
 }
 .nav-links:hover,
 .nav-links:active {
   color: var(--primary-color);
   cursor: pointer;
+  text-shadow: 0 0 10px #bb92e4;
 }
 
 .btn-nav-open {
@@ -393,15 +397,41 @@
   color: var(--primary-color);
 }
 
-@media (max-width: 414px) {
+@media (max-width: 734px) {
   html {
     font-size: 50%;
   }
   .nav-links-container {
-    display: none;
+    opacity: 0;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    border-bottom: 1px solid rgb(218, 218, 218);
+    top: 100%;
+    background: rgba(255, 255, 255, 0.99);
+    width: 100%;
+    left: 50%;
+    flex-direction: column;
+    gap: 2rem;
+    transform: translateX(-50%);
+    pointer-events: none;
+  }
+  .nav-links {
+    font-size: 1.8rem;
+  }
+  .nav-open {
+    opacity: 1;
+    pointer-events: auto;
   }
   .btn-nav-open {
     display: block;
+  }
+  .btn-nav-open:hover {
+    cursor: pointer;
+  }
+  .btn-nav-open:active {
+    color: #a364e2;
   }
   .btn-cta {
     display: none;
