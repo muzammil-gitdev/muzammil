@@ -41,6 +41,7 @@ export default function Contact() {
               name="messege"
               id="txt-msg"
             ></textarea>
+            <button className="btn btn-outline">Submit</button>
           </form>
           <div className="contact-info-container">
             <h4 className="contact-info-heading">Contact Information</h4>
@@ -68,11 +69,23 @@ export default function Contact() {
             <div className="social-link-container">
               <h5>Follow Me</h5>
               <div className="social-links">
-                <a href="" className="social-link">
+                <a
+                  href="https://www.instagram.com/muzammil.shah_/"
+                  className="social-link"
+                >
                   Instgram
                 </a>
-                <a href="" className="social-link">
+                <a
+                  href="https://www.facebook.com/muzammil.854"
+                  className="social-link"
+                >
                   Facebook
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/syed-muzammil-ali-shah-b08a39325/"
+                  className="social-link"
+                >
+                  LinkedIn
                 </a>
               </div>
             </div>
