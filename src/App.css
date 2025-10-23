@@ -5,13 +5,25 @@
   outline: none;
 }
 
+body {
+  scroll-behavior: smooth;
+  /* background: linear-gradient(to right, #0f2027, #203a43, #2c5364); */
+  background-color: #111827;
+  background-color: rgb(43, 38, 46);
+  color: white;
+}
+
 .header-container {
   position: sticky;
   left: 0;
   right: 0;
-  background: rgba(255, 255, 255, 0.95);
+  /* background: rgba(255, 255, 255, 0.95); */
+  background-color: #111827;
+  background-color: black;
+  background-color: rgb(43, 38, 46);
   top: 0;
-  border: 1px solid rgb(223, 223, 223);
+  /* border-bottom: 1px solid rgb(102, 102, 102); */
+  /* box-shadow: 0 0 10px 5px rgb(255, 255, 255); */
   z-index: 10;
 }
 .header-inside-container {
@@ -72,7 +84,7 @@
 }
 .hero-container {
   max-width: 140rem;
-  margin: 5rem auto;
+  margin: 8rem auto;
   /* display: grid;
   grid-template-columns: auto auto;
   justify-items: center;
@@ -86,8 +98,8 @@
 .hero-grid-container {
   display: grid;
   /* grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr)); */
-  grid-template-columns: 3fr 2fr;
-  gap: 3rem;
+  grid-template-columns: 6fr 4fr;
+  gap: 8rem;
 }
 .hero-text-container {
   display: flex;
@@ -100,10 +112,25 @@
   font-weight: 500;
 }
 .hero-skill {
-  font-size: 7.2rem;
+  opacity: 1;
+  font-size: 6.4rem;
   font-weight: 700;
-  color: var(--primary-color);
+  /* color: var(--primary-color); */
+  background-image: linear-gradient(to right, #c084fc, #6366f1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: custom 0.8s infinite alternate;
 }
+@keyframes custom {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .hero-text {
   font-size: 1.8rem;
   font-weight: 300;
@@ -113,11 +140,20 @@
 .hero-img {
   justify-self: end;
   border-radius: 1rem;
-  box-shadow: 0 0 15px 10px rgb(241, 241, 241);
+  box-shadow: 0 0 30px 20px rgb(59, 31, 70);
   width: 100%;
   aspect-ratio: 10/12;
   object-position: center;
   object-fit: cover;
+  animation: customskill 0.8s infinite alternate;
+}
+@keyframes customskill {
+  from {
+    box-shadow: none;
+  }
+  to {
+    box-shadow: 0 0 30px 20px rgb(72, 38, 85);
+  }
 }
 .projects-section {
   /* background-color: aqua; */
@@ -282,16 +318,16 @@
 .wp-item-number {
   font-size: 4.8rem;
   font-weight: 700;
-  color: rgb(39, 37, 37);
+  color: rgb(177, 177, 177);
 }
 .wp-item-heading {
   font-size: 2.4rem;
   font-weight: 500;
-  color: #292929aa;
+  color: #968484aa;
 }
 .wp-item-text {
   font-size: 1.6rem;
-  color: gray;
+  color: rgb(233, 233, 233);
 }
 
 .contact-section {
@@ -313,6 +349,10 @@
 .contact-heading {
   font: 700 4.8rem Rubik;
   margin-bottom: 1rem;
+  background-image: linear-gradient(to right, #c084fc, #6366f1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 .misc-text {
   text-align: center;
@@ -336,16 +376,18 @@
 .text-input {
   padding: 1rem 1.6rem;
   border-radius: 1rem;
-  border: 1px solid rgb(216, 216, 216);
-  box-shadow: 0 3px 3px 1px rgb(186, 186, 186);
+  /* border: 1px solid rgb(216, 216, 216); */
+  border: none;
+  background-color: rgb(72, 64, 77);
+  color: white;
 }
 .textarea-input {
   padding: 1rem 1.6rem;
 
   height: 10rem;
   border-radius: 1rem;
-  border: 1px solid rgb(216, 216, 216);
-  box-shadow: 0 3px 3px 1px rgb(186, 186, 186);
+  border: none;
+  background-color: rgb(72, 64, 77);
 }
 .contact-info-container {
 }
@@ -409,13 +451,21 @@
     padding: 2rem 0;
     border-bottom: 1px solid rgb(218, 218, 218);
     top: 100%;
-    background: rgba(255, 255, 255, 0.99);
+    background-color: #111827;
     width: 100%;
     left: 50%;
     flex-direction: column;
     gap: 2rem;
     transform: translateX(-50%);
     pointer-events: none;
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 9.1ch;
+    } /* Match the width */
   }
   .nav-links {
     font-size: 1.8rem;

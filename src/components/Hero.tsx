@@ -7,7 +7,7 @@ export default function Hero() {
         <div className="hero-grid-container">
           <div className="hero-text-container">
             <p className="hero-name">Syed Muzammil Ali Shah</p>
-            <p className="hero-skill">Web Developer</p>
+            <p className="hero-skill">Front-End Developer</p>
             <p className="hero-text">
               I'm a front-end developer passionate about building clean and
               responsive websites using HTML, CSS, and JavaScript. I specialize

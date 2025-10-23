@@ -8,6 +8,7 @@ export default function Header() {
   };
 
   const navLinks = ["Home", "Projects", "About", "Skills", "Services"];
+
   return (
     <header className="header-container">
       <div className="header-inside-container">

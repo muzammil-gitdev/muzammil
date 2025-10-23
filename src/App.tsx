@@ -15,7 +15,6 @@ function App() {
       <About />
       <WorkProcess />
       <Contact />
-      <h1>This is me</h1>
     </>
   );
 }

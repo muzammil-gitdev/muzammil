@@ -1,6 +1,6 @@
 import { ExternalLink } from "lucide-react";
 
-export default function Projects() {
+function Projects() {
   return (
     <section className="projects-section">
       <div className="projects-container">
@@ -90,3 +90,5 @@ export default function Projects() {
     </section>
   );
 }
+
+export default Projects;
