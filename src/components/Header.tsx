@@ -7,7 +7,14 @@ export default function Header() {
     setIsNavOpen(!isNavOpen);
   };
 
-  const navLinks = ["Home", "Projects", "About", "Skills", "Services"];
+  const navLinks = ["Home", "Projects", "About", "Process", "Contact"];
+
+  const scrollToElement = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+  };
 
   return (
     <header className="header-container">
@@ -19,14 +26,26 @@ export default function Header() {
               isNavOpen ? "nav-links-container nav-open" : "nav-links-container"
             }
           >
-            {navLinks.map((curr, i) => (
-              <li key={i} className="nav-links">
-                {curr}
-              </li>
-            ))}
+            {navLinks.map((curr, i) => {
+              const refe = `${curr.toLowerCase()}`;
+              return (
+                <a
+                  onClick={() => scrollToElement(refe)}
+                  key={i}
+                  className="nav-links"
+                >
+                  {curr}
+                </a>
+              );
+            })}
           </ul>
           <Menu className="btn-nav-open" onClick={toggleNav} />
-          <button className="btn btn-cta">Get in Touch</button>
+          <button
+            onClick={() => scrollToElement("contact")}
+            className="btn btn-cta"
+          >
+            Get in Touch
+          </button>
         </nav>
       </div>
     </header>

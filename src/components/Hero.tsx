@@ -1,4 +1,4 @@
-import { MoveRight } from "lucide-react";
+import { Download, MoveRight } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -13,14 +13,33 @@ export default function Hero() {
               responsive websites using HTML, CSS, and JavaScript. I specialize
               in crafting dynamic and interactive user interfaces with React.
             </p>
-            <div>
-              <button
-                style={{ fontSize: "1.8rem", padding: "1.2rem 2.4rem" }}
+            <div className="hero-btn-container">
+              <a
+                href="#projects"
+                style={{
+                  display: "inline-flex",
+                  fontSize: "1.8rem",
+                  padding: "1.2rem 2.4rem",
+                  textDecoration: "none",
+                }}
                 className="btn"
               >
                 View projects
                 <MoveRight />
-              </button>
+              </a>
+              <a
+                href="#projects"
+                style={{
+                  display: "inline-flex",
+                  fontSize: "1.8rem",
+                  padding: "1.2rem 2.4rem",
+                  textDecoration: "none",
+                }}
+                className="btn btn-outline"
+              >
+                Download Resume
+                <Download />
+              </a>
             </div>
           </div>
           <img className="hero-img" src="APC_0631g.JPG" alt="muzammil" />

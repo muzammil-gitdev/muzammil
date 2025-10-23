@@ -13,14 +13,10 @@ function Projects() {
         </div>
         <div className="projects-grid-container">
           <div className="project">
-            <img
-              className="project-img"
-              src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170"
-              alt=""
-            />
+            <img className="project-img" src="omnifoods.webp" alt="" />
             <div className="project-overlay">
-              <p className="overlay-text">React + TypeScript</p>
-              <p className="overlay-description">Bus Travel Website</p>
+              <p className="overlay-text">OmniFoods</p>
+              <p className="overlay-description">HTML+CSS+JS</p>
               <div
                 style={{
                   display: "flex",
@@ -30,7 +26,10 @@ function Projects() {
                 }}
               >
                 <ExternalLink color="#a364e2" />
-                <a className="project-link" href="https://www.facebook.com">
+                <a
+                  className="project-link"
+                  href="https://omnifoods-six.vercel.app/"
+                >
                   View Project
                 </a>
               </div>
@@ -38,14 +37,10 @@ function Projects() {
           </div>
 
           <div className="project">
-            <img
-              className="project-img"
-              src="https://images.unsplash.com/photo-1579389083078-4e7018379f7e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170"
-              alt=""
-            />
+            <img className="project-img" src="k2tours.webp" alt="" />
             <div className="project-overlay">
-              <p className="overlay-text">React + TypeScript</p>
-              <p className="overlay-description">School Management System</p>
+              <p className="overlay-text">K2-Tours</p>
+              <p className="overlay-description">React+TypeScript</p>
               <div
                 style={{
                   display: "flex",
@@ -55,21 +50,17 @@ function Projects() {
                 }}
               >
                 <ExternalLink color="#a364e2" />
-                <a className="project-link" href="https://www.facebook.com">
+                <a className="project-link" href="https://k2tours.vercel.app/">
                   View Project
                 </a>
               </div>
             </div>
           </div>
           <div className="project">
-            <img
-              className="project-img"
-              src="https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170"
-              alt=""
-            />
+            <img className="project-img" src="pig-game.webp" alt="" />
             <div className="project-overlay">
-              <p className="overlay-text">React + TypeScript</p>
-              <p className="overlay-description">School Management System</p>
+              <p className="overlay-text">Pig Game</p>
+              <p className="overlay-description">HTML CSS JS</p>
               <div
                 style={{
                   display: "flex",
@@ -79,7 +70,10 @@ function Projects() {
                 }}
               >
                 <ExternalLink color="#a364e2" />
-                <a className="project-link" href="https://www.facebook.com">
+                <a
+                  className="project-link"
+                  href="https://muzammil-gitdev.github.io/pig-game/"
+                >
                   View Project
                 </a>
               </div>
