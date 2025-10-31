@@ -28,7 +28,7 @@ export default function Hero() {
                 <MoveRight />
               </a>
               <a
-                href="#projects"
+                href="https://drive.google.com/file/d/1xbwRe2llveIVSxl7nxMW_236uozNhkDS/view?usp=sharing"
                 style={{
                   display: "inline-flex",
                   fontSize: "1.8rem",
