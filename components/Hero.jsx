@@ -47,6 +47,7 @@ const Hero = () => {
             <Link
               href="https://drive.google.com/file/d/1bEPnX3o_zGHVkJoo-IxDsq490evIlmWc/view?usp=sharing"
               className="px-8 py-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/50 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors font-semibold"
+              target="_blank"
             >
               Download CV
             </Link>
