@@ -35,7 +35,7 @@ const Projects = () => {
     <section id="projects" className="py-24 bg-white dark:bg-zinc-950">
       <div className="container mx-auto px-6">
         <div className="mb-16 text-center">
-          <h2 className="text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-slate-900 to-slate-700 dark:from-white dark:to-slate-300">
+          <h2 className="text-4xl font-bold mb-4 bg-clip-text text-transparent bg-linear-to-r from-slate-900 to-slate-700 dark:from-white dark:to-slate-300">
             Featured Projects
           </h2>
           <p className="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
