@@ -11,18 +11,21 @@ const Footer = () => {
           <Link
             href="https://github.com/muzammil-gitdev"
             className="text-slate-500 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
+            target="_blank"
           >
             GitHub
           </Link>
           <Link
             href="https://www.linkedin.com/in/syed-muzammil-ali-shah-b08a39325/"
             className="text-slate-500 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
+            target="_blank"
           >
             LinkedIn
           </Link>
           <Link
             href="https://www.instagram.com/muzammil.shah_/"
             className="text-slate-500 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
+            target="_blank"
           >
             Instagram
           </Link>
