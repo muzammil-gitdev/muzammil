@@ -36,7 +36,7 @@ export default function Hero() {
                         transition={{ duration: 0.5, delay: 0.1 }}
                         className="text-5xl font-extrabold tracking-tight text-zinc-900 sm:text-6xl lg:text-7xl dark:text-white"
                     >
-                        Hi, I&apos;m <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400">Zeeshan</span>.
+                        Hi, I&apos;m <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400">Muzammil</span>.
                     </motion.h1>
 
                     <motion.h2
@@ -89,7 +89,7 @@ export default function Hero() {
                     >
                         <a href="#" className="hover:text-zinc-900 dark:hover:text-white transition-colors"><Github className="w-6 h-6" /></a>
                         <a href="#" className="hover:text-zinc-900 dark:hover:text-white transition-colors"><Linkedin className="w-6 h-6" /></a>
-                        <a href="mailto:hello@zeeshan.dev" className="hover:text-zinc-900 dark:hover:text-white transition-colors"><Mail className="w-6 h-6" /></a>
+                        <a href="mailto:hello@muzammil.dev" className="hover:text-zinc-900 dark:hover:text-white transition-colors"><Mail className="w-6 h-6" /></a>
                     </motion.div>
                 </div>
 
@@ -111,7 +111,7 @@ export default function Hero() {
                         >
                             <Image
                                 src="/avatar.png"
-                                alt="Zeeshan Haider"
+                                alt="Muzammil Haider"
                                 width={450}
                                 height={450}
                                 className="object-contain drop-shadow-2xl mix-blend-multiply dark:mix-blend-normal rounded-full"

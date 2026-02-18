@@ -67,7 +67,7 @@ export default function Contact() {
                             <Linkedin className="h-6 w-6" />
                             <span className="sr-only">LinkedIn</span>
                         </a>
-                        <a href="mailto:hello@zeeshan.dev" className="text-zinc-400 hover:text-white transition-colors">
+                        <a href="mailto:hello@muzammil.dev" className="text-zinc-400 hover:text-white transition-colors">
                             <Mail className="h-6 w-6" />
                             <span className="sr-only">Email</span>
                         </a>
