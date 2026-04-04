@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Code2, Server, Cloud, PenTool } from "lucide-react"; // Using icons for visual interest if needed, or just text.
 
 export default function About() {
     return (

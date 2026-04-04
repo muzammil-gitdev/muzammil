@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata = {
-  title: "Muzammil Haider | MERN & Next.js Developer",
+  title: "Muzammil Ali | MERN & Next.js Developer",
   description: "Crafting fast, scalable, and elegant web experiences.",
 };
 

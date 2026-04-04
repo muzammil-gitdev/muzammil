@@ -48,7 +48,7 @@ export default function Nav() {
                 )}
             >
                 <Link href="/" className="mr-4 text-lg font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
-                    ZH
+                    MA
                 </Link>
                 <ul className="hidden items-center gap-6 sm:flex">
                     {navLinks.map((link) => (
