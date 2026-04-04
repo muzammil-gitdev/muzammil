@@ -72,7 +72,7 @@ export default function Hero() {
                             <ArrowRight className="h-4 w-4" />
                         </Link>
                         <Link
-                            href="/resume.pdf"
+                            href="https://drive.google.com/file/d/1xHniMjVR3kPYfKKF3tdCGWt2mguotqgx/view?usp=sharing"
                             target="_blank"
                             className="flex items-center gap-2 rounded-full border border-zinc-200 bg-white px-6 py-3 text-sm font-semibold text-zinc-900 shadow-sm transition-all hover:border-zinc-300 hover:bg-zinc-50 hover:scale-105 active:scale-95 dark:border-zinc-800 dark:bg-black dark:text-zinc-100 dark:hover:border-zinc-700"
                         >
@@ -87,9 +87,9 @@ export default function Hero() {
                         transition={{ duration: 0, delay: 0.6 }}
                         className="mt-10 flex items-center gap-6 text-zinc-500 dark:text-zinc-400"
                     >
-                        <a href="#" className="hover:text-zinc-900 dark:hover:text-white transition-colors"><Github className="w-6 h-6" /></a>
-                        <a href="#" className="hover:text-zinc-900 dark:hover:text-white transition-colors"><Linkedin className="w-6 h-6" /></a>
-                        <a href="mailto:hello@muzammil.dev" className="hover:text-zinc-900 dark:hover:text-white transition-colors"><Mail className="w-6 h-6" /></a>
+                        <Link href="https://github.com/muzammil-gitdev" className="hover:text-zinc-900 dark:hover:text-white transition-colors"><Github className="w-6 h-6" /></Link>
+                        <Link href="https://www.linkedin.com/in/muzammil-ali-07b09b25b/" target="_blank" className="hover:text-zinc-900 dark:hover:text-white transition-colors"><Linkedin className="w-6 h-6" /></Link>
+                        <Link href="mailto:[EMAIL_ADDRESS]" className="hover:text-zinc-900 dark:hover:text-white transition-colors"><Mail className="w-6 h-6" /></Link>
                     </motion.div>
                 </div>
 

@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function About() {
     return (
@@ -25,13 +26,14 @@ export default function About() {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.5, delay: 0.2 }}
-                        className="aspect-square relative rounded-2xl overflow-hidden bg-zinc-100 dark:bg-zinc-900 flex items-center justify-center group"
+                        className="aspect-square relative rounded-2xl overflow-hidden bg-zinc-100 dark:bg-zinc-900 group"
                     >
-                        {/* Placeholder for Profile Image - Using a gradient or waiting for user image */}
-                        <div className="absolute inset-0 bg-gradient-to-tr from-zinc-200 to-zinc-50 dark:from-zinc-800 dark:to-zinc-900" />
-                        <span className="relative z-10 text-zinc-400 font-medium group-hover:scale-110 transition-transform duration-500">
-                            [Profile Image Placeholder]
-                        </span>
+                        <Image
+                            src="/about.jpg"
+                            alt="About Me"
+                            fill
+                            className="object-cover group-hover:scale-105 transition-transform duration-500"
+                        />
                     </motion.div>
 
                     <motion.div
@@ -41,25 +43,15 @@ export default function About() {
                         transition={{ duration: 0.5, delay: 0.4 }}
                     >
                         <h3 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100 mb-6">
-                            Engineering sleek, scalable solutions.
+                            Crafting pixel-perfect interfaces with React & Next.js.
                         </h3>
                         <p className="text-zinc-600 dark:text-zinc-400 mb-6 leading-relaxed">
-                            I am a passionate **MERN & Next.js Developer** with a deep focus on creating web applications that are not only functional but also fast, secure, and intuitive. My journey in tech is driven by a desire to solve complex problems with clean, maintainable architecture.
+                            I am a dedicated <strong>Frontend Developer</strong> specializing in <strong>React</strong> and <strong>Next.js</strong>. I build fast, responsive, and visually polished web applications with a strong emphasis on clean component architecture, reusable design systems, and seamless user experiences.
                         </p>
                         <p className="text-zinc-600 dark:text-zinc-400 mb-6 leading-relaxed">
-                            I specialize in bridging the gap between design and engineering, ensuring every pixel is perfect while the underlying code is robust. Whether it's optimizing server-side performance or crafting silky-smooth frontend animations, I love the entire process of bringing ideas to life on the web.
+                            From translating Figma designs into production-ready code to implementing smooth animations with Framer Motion and styling with Tailwind CSS — I focus on every detail that makes a frontend feel premium. I thrive on turning complex UI requirements into elegant, maintainable React components.
                         </p>
 
-                        <div className="grid grid-cols-2 gap-4">
-                            <div className="flex flex-col gap-1">
-                                <span className="text-3xl font-bold text-zinc-900 dark:text-white">3+</span>
-                                <span className="text-sm text-zinc-500">Years Experience</span>
-                            </div>
-                            <div className="flex flex-col gap-1">
-                                <span className="text-3xl font-bold text-zinc-900 dark:text-white">20+</span>
-                                <span className="text-sm text-zinc-500">Projects Completed</span>
-                            </div>
-                        </div>
                     </motion.div>
                 </div>
             </div>

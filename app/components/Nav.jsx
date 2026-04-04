@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 
@@ -15,7 +16,7 @@ function cn(...inputs) {
 const navLinks = [
     { name: "About", href: "#about" },
     { name: "Skills", href: "#skills" },
-    { name: "Services", href: "#services" },
+    // { name: "Services", href: "#services" },
     { name: "Portfolio", href: "#portfolio" },
     { name: "Contact", href: "#contact" },
 ];
@@ -47,8 +48,20 @@ export default function Nav() {
                     "bg-white/70 backdrop-blur-md dark:bg-zinc-900/70 supports-[backdrop-filter]:bg-white/50"
                 )}
             >
-                <Link href="/" className="mr-4 text-lg font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
-                    MA
+                <Link href="/" className="mr-4 relative w-9 h-9 flex-shrink-0">
+                    <div
+                        className="w-full h-full bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400"
+                        style={{
+                            maskImage: "url(/logoUpdated.png)",
+                            WebkitMaskImage: "url(/logoUpdated.png)",
+                            maskSize: "contain",
+                            WebkitMaskSize: "contain",
+                            maskRepeat: "no-repeat",
+                            WebkitMaskRepeat: "no-repeat",
+                            maskPosition: "center",
+                            WebkitMaskPosition: "center",
+                        }}
+                    />
                 </Link>
                 <ul className="hidden items-center gap-6 sm:flex">
                     {navLinks.map((link) => (
