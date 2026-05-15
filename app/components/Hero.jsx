@@ -102,6 +102,7 @@ export default function Hero() {
             <Link
               href="https://github.com/muzammil-gitdev"
               className="hover:text-zinc-900 dark:hover:text-white transition-colors"
+              target="blank"
             >
               <Github className="w-6 h-6" />
             </Link>
